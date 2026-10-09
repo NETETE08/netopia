@@ -462,6 +462,23 @@ nav a:hover::after {
   width: 100%;
 }
 
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  image-rendering: pixelated;
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(15, 20, 36, 0.35), rgba(15, 20, 36, 0.65)),
+    url("img/banner.svg") center / cover no-repeat;
+}
+
 @media (max-width: 600px) {
   nav a::after {
     display: none;

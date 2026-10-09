@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda | Netopia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | Netopia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 </head>
+
 <body>
 
-  <header>
-    <h1 class="logo">Netopia</h1>
-    <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
-    <nav id="menu">
-      <a href="index.html">Inicio</a>
-      <a href="tienda.html">Tienda</a>
-    </nav>
-  </header>
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="img/logo.svg" alt="Netopia" class="logo-img">
+        </a>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Tienda</h2>
-      <p>Proyecto de práctica: no se cobra nada real.</p>
-    </section>
+    <main>
+        <section>
+            <h2>Tienda</h2>
+            <p>Proyecto de práctica: no se cobra nada real.</p>
+        </section>
 
-    <section class="tienda-layout">
-      <div class="productos" id="productos"></div>
+        <section class="tienda-layout">
+            <div class="productos" id="productos"></div>
 
-      <aside class="carrito">
-        <h3>Tu carrito</h3>
-        <ul id="carrito-lista"></ul>
-        <p class="total">Total: <span id="total">$0</span></p>
-        <button class="boton" id="vaciar">Vaciar carrito</button>
-      </aside>
-    </section>
-  </main>
+            <aside class="carrito">
+                <h3>Tu carrito</h3>
+                <ul id="carrito-lista"></ul>
+                <p class="total">Total: <span id="total">$0</span></p>
+                <button class="boton" id="vaciar">Vaciar carrito</button>
+            </aside>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2026 Netopia - Proyecto de práctica, no es un servidor real</p>
-  </footer>
+    <footer>
+        <p>© 2026 Netopia - Proyecto de práctica, no es un servidor real</p>
+    </footer>
 
-  <script src="tienda.js"></script>
+    <script src="tienda.js"></script>
 </body>
+
 </html>
