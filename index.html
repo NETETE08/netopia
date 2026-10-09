@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netopia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">Netopia</h1>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+        <nav id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#modos">Modos</a>
+            <a href="#staff">Staff</a>
+            <a href="#reglas">Reglas</a>
+            <a href="#unirse">Cómo entrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>Bienvenido a Netopia</h2>
+            <p>Survival, SkyWars y BedWars en un solo servidor.</p>
+            <a href="#unirse" class="boton">Jugar ahora</a>
+            <div class="estado" id="estado">
+                <span class="punto" id="punto"></span>
+                <span id="estado-texto">Consultando servidor...</span>
+            </div>
+        </section>
+
+        <section id="modos">
+            <h2>Modos de juego</h2>
+
+            <div class="modos-grid">
+                <article class="modo survival">
+                    <span class="icono">🌲</span> <!-- Survival -->
+                    <h3>Survival</h3>
+                    <p>Construí, explorá y sobreviví junto a otros jugadores.</p>
+                </article>
+
+                <article class="modo skywars">
+                    <span class="icono">☁️</span> <!-- SkyWars -->
+                    <h3>SkyWars</h3>
+                    <p>Peleá en islas flotantes y sé el último en pie.</p>
+                </article>
+
+                <article class="modo bedwars">
+                    <span class="icono">🛏️</span> <!-- BedWars -->
+                    <h3>BedWars</h3>
+                    <p>Protegé tu cama y destruí la de los demás equipos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="staff">
+            <h2>Nuestro equipo</h2>
+            <div class="staff-grid">
+                <article class="miembro">
+                    <div class="avatar">A</div>
+                    <h3>Alain</h3>
+                    <p class="rol dueno">Dueño</p>
+                </article>
+
+                <article class="miembro">
+                    <div class="avatar">N</div>
+                    <h3>Nombre</h3>
+                    <p class="rol admin">Admin</p>
+                </article>
+
+                <article class="miembro">
+                    <div class="avatar">M</div>
+                    <h3>Nombre</h3>
+                    <p class="rol mod">Moderador</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="reglas">
+            <h2>Reglas</h2>
+            <ul class="reglas">
+                <li>Respetá a todos los jugadores.</li>
+                <li>Nada de hacks ni trampas.</li>
+                <li>No hagas spam ni publicidad.</li>
+                <li>Seguí las indicaciones del staff.</li>
+            </ul>
+        </section>
+
+        <section id="unirse">
+            <h2>Cómo entrar</h2>
+            <p>Abrí Minecraft Java, andá a Multijugador y agregá esta IP:</p>
+            <div class="ip-box" id="ip">netopia.ejemplo.com</div>
+            <br>
+            <button class="boton" id="btn-copiar">Copiar IP</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Netopia</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

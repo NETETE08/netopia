@@ -1,0 +1,296 @@
+:root {
+    --fondo: #0f1424;
+    --tarjeta: #1a2138;
+    --texto: #e8ecf5;
+    --acento: #7c4dff;
+    --survival: #4caf50;
+    --skywars: #4fc3f7;
+    --bedwars: #ef5350;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(15, 20, 36, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1rem;
+    color: var(--acento);
+}
+
+nav a {
+    color: var(--texto);
+    text-decoration: none;
+    margin-left: 1.2rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--skywars);
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #2a1f5c, var(--fondo) 65%);
+}
+
+.hero h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(1.4rem, 5vw, 2.8rem);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(135deg, var(--acento), var(--skywars));
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 999px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(124, 77, 255, 0.45);
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.modos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.modo {
+    background: var(--tarjeta);
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+    width: 270px;
+    border-top: 5px solid;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.modo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.icono {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.survival {
+    border-color: var(--survival);
+}
+
+.skywars {
+    border-color: var(--skywars);
+}
+
+.bedwars {
+    border-color: var(--bedwars);
+}
+
+.reglas {
+    list-style: none;
+    max-width: 500px;
+    margin: 1.5rem auto 0;
+    text-align: left;
+}
+
+.reglas li {
+    background: var(--tarjeta);
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.7rem;
+    border-left: 4px solid var(--acento);
+    border-radius: 8px;
+}
+
+.ip-box {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: var(--tarjeta);
+    border: 2px dashed var(--acento);
+    border-radius: 12px;
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0.7;
+}
+
+button.boton {
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--texto);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-btn.activo {
+    transform: rotate(90deg);
+}
+
+.estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--tarjeta);
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #888;
+}
+
+.punto.online {
+  background: #4caf50;
+  box-shadow: 0 0 8px #4caf50;
+}
+
+.punto.offline {
+  background: #ef5350;
+}
+
+.staff-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.miembro {
+  background: var(--tarjeta);
+  padding: 1.5rem;
+  border-radius: 14px;
+  width: 200px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.miembro:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 0.8rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, var(--acento), var(--skywars));
+}
+
+.rol {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.rol.dueno { background: #ffb300; color: #1a1a1a; }
+.rol.admin { background: var(--bedwars); }
+.rol.mod   { background: var(--survival); }
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease;
+    }
+
+    nav.abierto {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 0.8rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
