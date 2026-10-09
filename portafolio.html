@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Alain</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="img/logo.svg" alt="Netopia" class="logo-img">
+        </a>
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">☰</button>
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="portafolio.html">Portafolio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="perfil">
+            <h2>Hola, soy Alain</h2>
+            <p>Hago webs y diseño para servidores de Minecraft: página con IP, modos de juego, reglas, tienda y contador
+                de jugadores en vivo. Me encanta el mundo de los servidores y lo cuido en cada detalle.</p>
+        </section>
+
+        <section>
+            <h2>Proyectos</h2>
+            <div class="proyectos-grid">
+                <article class="proyecto">
+                    <img src="img/captura-inicio.png" alt="Captura de la página principal de Netopia">
+                    <h3>Web de servidor</h3>
+                    <p>Portada, modos de juego, staff, reglas, botón para copiar la IP y contador de jugadores
+                        conectados.</p>
+                    <a class="boton" href="index.html">Ver proyecto</a>
+                </article>
+
+                <article class="proyecto">
+                    <img src="img/captura-tienda.png" alt="Captura de la tienda de rangos de Netopia">
+                    <h3>Tienda de rangos</h3>
+                    <p>Catálogo de rangos con beneficios y un carrito que suma el total y se guarda al recargar.</p>
+                    <a class="boton" href="tienda.html">Ver proyecto</a>
+                </article>
+            </div>
+            <p class="nota">Son proyectos de práctica, no un servidor real.</p>
+        </section>
+
+        <section>
+            <h2>Qué hago</h2>
+            <ul class="servicios">
+                <li>Página web para tu servidor, adaptada a celular</li>
+                <li>Logo, banner e imágenes para Discord y redes</li>
+                <li>Tienda de rangos y secciones a medida</li>
+                <li>Mejoras y arreglos en webs que ya tenés</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Contame de tu servidor y qué necesitás, y te respondo con una propuesta.</p>
+
+            <div class="contacto-botones">
+                <a class="boton" target="_blank" rel="noopener noreferrer"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=kenox.arce@gmail.com&su=Quiero%20una%20web%20para%20mi%20servidor">
+                    Escribirme por Gmail
+                </a>
+                <button class="boton" id="btn-email" data-email="kenox.arce@gmail.com">Copiar email</button>
+            </div>
+
+            <p class="nota">Si no se abre Gmail, copiá la dirección: <strong>kenox.arce@gmail.com</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Alain - Proyectos de práctica</p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="contacto.js"></script>
+</body>
+
+</html>

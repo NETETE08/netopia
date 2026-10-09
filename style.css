@@ -479,6 +479,74 @@ nav a:hover::after {
     url("img/banner.svg") center / cover no-repeat;
 }
 
+.perfil {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 1.5rem auto 0;
+}
+
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  background: var(--tarjeta);
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  text-align: left;
+}
+
+.proyecto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.proyecto p {
+  flex-grow: 1;
+  margin: 0.5rem 0 1rem;
+}
+
+.proyecto .boton {
+  margin-top: auto;
+  text-align: center;
+}
+
+.servicios {
+  list-style: none;
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.servicios li {
+  background: var(--tarjeta);
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid var(--acento);
+  border-radius: 8px;
+}
+
+.nota {
+  margin-top: 1rem;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.contacto-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 @media (max-width: 600px) {
   nav a::after {
     display: none;
